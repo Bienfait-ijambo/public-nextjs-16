@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Hero – Agentic AI & RAG Course</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased">
+  <!-- Page Wrapper -->
+  <div class="min-h-screen flex flex-col">
+    <!-- Top Gradient Glow -->
+    <div class="pointer-events-none fixed inset-x-0 top-0 z-0 h-64 bg-gradient-to-b from-cyan-500/20 via-slate-950 to-slate-950 blur-3xl opacity-70"></div>
+
+    <!-- NAVBAR -->
+    <header class="relative z-10 border-b border-slate-800 bg-slate-950/80 backdrop-blur">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-4">
+        <!-- Logo -->
+        <div class="flex items-center gap-2">
+          <div class="h-8 w-8 rounded-xl bg-gradient-to-br from-cyan-400 via-blue-500 to-indigo-500 flex items-center justify-center text-xs font-bold">
+            AI
+          </div>
+          <div>
+            <span class="font-semibold tracking-tight">AI Hero</span>
+            <p class="text-[11px] text-slate-400 leading-tight">Agentic AI &amp; RAG Mastery</p>
+          </div>
+        </div>
+
+        <!-- Nav Links -->
+        <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300">
+          <a href="#chapters" class="hover:text-white transition">Chapters</a>
+          <a href="#who" class="hover:text-white transition">Who It’s For</a>
+          <a href="#curriculum" class="hover:text-white transition">Curriculum</a>
+          <a href="#bonuses" class="hover:text-white transition">Bonuses</a>
+          <a href="#faq" class="hover:text-white transition">FAQ</a>
+        </nav>
+
+        <!-- CTA -->
+        <a href="#waitlist" class="hidden sm:inline-flex items-center rounded-full border border-cyan-400/40 bg-cyan-500/10 px-4 py-1.5 text-xs font-medium text-cyan-100 hover:bg-cyan-500/30 transition">
+          Join Waitlist
+        </a>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="relative z-10 flex-1">
+      <!-- HERO SECTION -->
+      <section class="pt-10 pb-16 sm:pt-16 sm:pb-24">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid gap-10 lg:grid-cols-[minmax(0,1.4fr),minmax(0,1fr)] items-center">
+          <!-- Left Column: Copy -->
+          <div>
+            <p class="inline-flex items-center gap-2 rounded-full border border-emerald-400/30 bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-100 mb-4">
+              New • Cohort-based AI Course
+            </p>
+
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-white">
+              Become an <span class="text-cyan-400">AI Hero</span><br class="hidden sm:block" />
+              Build Agentic AI &amp; RAG Systems End-to-End.
+            </h1>
+
+            <p class="mt-4 text-sm sm:text-base text-slate-300 max-w-xl">
+              Learn how to design, build, and deploy autonomous agents, RAG systems, and multi-agent workflows that solve real problems, 24/7.
+            </p>
+
+            <!-- Key bullets -->
+            <div class="mt-6 grid gap-3 sm:grid-cols-2 text-xs sm:text-sm">
+              <div class="flex items-start gap-3">
+                <div class="mt-0.5 h-5 w-5 flex items-center justify-center rounded-full bg-cyan-500/20 text-[10px]">
+                  ✓
+                </div>
+                <p class="text-slate-200">
+                  From agent foundations to production deployment.
+                </p>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="mt-0.5 h-5 w-5 flex items-center justify-center rounded-full bg-cyan-500/20 text-[10px]">
+                  ✓
+                </div>
+                <p class="text-slate-200">
+                  Includes RAG, tools, memory, multi-agent, and capstones.
+                </p>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="mt-0.5 h-5 w-5 flex items-center justify-center rounded-full bg-cyan-500/20 text-[10px]">
+                  ✓
+                </div>
+                <p class="text-slate-200">
+                  Practical, project-based — ship real AI systems.
+                </p>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="mt-0.5 h-5 w-5 flex items-center justify-center rounded-full bg-cyan-500/20 text-[10px]">
+                  ✓
+                </div>
+                <p class="text-slate-200">
+                  Community, live sessions, and templates included.
+                </p>
+              </div>
+            </div>
+
+            <!-- Hero CTA -->
+            <div id="waitlist" class="mt-8">
+              <form class="max-w-md space-y-3">
+                <div class="flex flex-col sm:flex-row gap-3">
+                  <input
+                    type="email"
+                    required
+                    placeholder="Enter your best email"
+                    class="flex-1 rounded-xl border border-slate-700 bg-slate-900/70 px-3 py-2 text-sm text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-cyan-500"
+                  />
+                  <button
+                    type="submit"
+                    class="rounded-xl bg-gradient-to-r from-cyan-500 to-blue-500 px-5 py-2 text-sm font-medium text-slate-950 hover:from-cyan-400 hover:to-blue-400 transition shadow-lg shadow-cyan-500/30"
+                  >
+                    Join Waitlist
+                  </button>
+                </div>
+                <p class="text-[11px] text-slate-400">
+                  No spam. You’ll get launch details, early-bird pricing, and bonus content.
+                </p>
+              </form>
+            </div>
+
+            <!-- Social proof line -->
+            <p class="mt-6 text-[11px] text-slate-400">
+              🔒 Your email is safe. Unsubscribe anytime.
+            </p>
+          </div>
+
+          <!-- Right Column: Course Preview Card -->
+          <div class="lg:justify-self-end w-full max-w-md mx-auto">
+            <div class="rounded-3xl border border-slate-800 bg-slate-900/70 p-5 shadow-2xl shadow-cyan-500/10">
+              <div class="flex items-center justify-between mb-3">
+                <div>
+                  <p class="text-xs uppercase tracking-[0.2em] text-slate-400">
+                    Course Preview
+                  </p>
+                  <p class="text-sm font-medium text-slate-100">
+                    AI Hero: Agentic AI &amp; RAG
+                  </p>
+                </div>
+                <span class="rounded-full bg-emerald-500/10 px-3 py-1 text-[11px] font-medium text-emerald-300 border border-emerald-500/40">
+                  Cohort 1 • Coming Soon
+                </span>
+              </div>
+
+              <div class="mt-4 space-y-3 text-xs text-slate-200">
+                <div class="flex items-center justify-between">
+                  <span>Modules</span>
+                  <span class="text-slate-300 font-medium">8</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span>Capstone Projects</span>
+                  <span class="text-slate-300 font-medium">4</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span>Format</span>
+                  <span class="text-slate-300 font-medium">Video + Live + Community</span>
+                </div>
+              </div>
+
+              <div class="mt-5 border-t border-slate-800 pt-4">
+                <p class="text-[11px] uppercase tracking-[0.2em] text-slate-500 mb-2">
+                  You’ll Build
+                </p>
+                <ul class="space-y-2 text-xs text-slate-200">
+                  <li class="flex items-start gap-2">
+                    <span class="mt-[3px] h-1.5 w-1.5 rounded-full bg-cyan-400"></span>
+                    AI research &amp; coding agents with tools and memory.
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="mt-[3px] h-1.5 w-1.5 rounded-full bg-indigo-400"></span>
+                    RAG systems that answer from your own data.
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="mt-[3px] h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+                    Multi-agent workflows that plan, execute, and refine.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="mt-5 rounded-2xl bg-slate-900 border border-slate-800 px-4 py-3 text-[11px] text-slate-300">
+                🎁 Join the waitlist to unlock early-bird pricing, bonus modules, and private community access.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHO IT'S FOR -->
+      <section id="who" class="py-12 sm:py-16 border-t border-slate-900/60 bg-slate-950/60">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
+            <div>
+              <h2 class="text-xl sm:text-2xl font-semibold text-white">
+                Who is <span class="text-cyan-400">AI Hero</span> for?
+              </h2>
+              <p class="mt-1 text-sm text-slate-300 max-w-xl">
+                If you want to move from “just using ChatGPT” to building real AI systems — this is for you.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid gap-4 md:grid-cols-3 text-sm">
+            <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-4">
+              <p class="text-[11px] font-medium uppercase tracking-[0.18em] text-slate-400 mb-2">
+                Builders &amp; Devs
+              </p>
+              <p class="text-slate-100 font-medium mb-1">
+                Developers &amp; tinkerers
+              </p>
+              <p class="text-slate-300 text-xs">
+                You want to design and ship agents, tools, and RAG systems that go beyond simple prompts.
+              </p>
+            </div>
+            <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-4">
+              <p class="text-[11px] font-medium uppercase tracking-[0.18em] text-slate-400 mb-2">
+                Founders &amp; Operators
+              </p>
+              <p class="text-slate-100 font-medium mb-1">
+                Entrepreneurs &amp; indie hackers
+              </p>
+              <p class="text-slate-300 text-xs">
+                You want AI to automate workflows, deliver value to customers, and power your next startup.
+              </p>
+            </div>
+            <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-4">
+              <p class="text-[11px] font-medium uppercase tracking-[0.18em] text-slate-400 mb-2">
+                Creators &amp; Knowledge Workers
+              </p>
+              <p class="text-slate-100 font-medium mb-1">
+                Content, ops &amp; analysts
+              </p>
+              <p class="text-slate-300 text-xs">
+                You want AI agents that research, write, summarize, and execute tasks so you can focus on strategy.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CHAPTERS / MODULES OVERVIEW -->
+      <section id="chapters" class="py-14 sm:py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
+            <div>
+              <h2 class="text-xl sm:text-2xl font-semibold text-white">
+                Chapters: From <span class="text-cyan-400">Zero → Agentic Hero</span>
+              </h2>
+              <p class="mt-1 text-sm text-slate-300 max-w-xl">
+                8 chapters, each one focused on building concrete skills and shippable AI systems.
+              </p>
+            </div>
+            <p class="text-[11px] text-slate-400 max-w-xs">
+              You’ll work through the chapters in order, but you can revisit any module as a reference later.
+            </p>
+          </div>
+
+          <div class="grid gap-5 md:grid-cols-2">
+            <!-- Chapter 1 -->
+            <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+              <div class="flex items-center justify-between mb-2">
+                <p class="text-xs font-semibold text-cyan-300">Chapter 1</p>
+                <span class="text-[11px] text-slate-400">Foundations</span>
+              </div>
+              <h3 class="text-sm font-semibold text-white">
+                Foundations of Agentic AI
+              </h3>
+              <p class="mt-2 text-xs text-slate-300">
+                Understand what makes an AI “agentic” — beyond chatbots. Learn the agent loop: observe → plan → act → learn.
+              </p>
+              <ul class="mt-3 space-y-1.5 text-[11px] text-slate-300">
+                <li>• LLMs vs tools vs agents</li>
+                <li>• Autonomy levels &amp; capabilities</li>
+                <li>• Risks, failure modes &amp; guardrails</li>
+              </ul>
+            </div>
+
+            <!-- Chapter 2 -->
+            <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+              <div class="flex items-center justify-between mb-2">
+                <p class="text-xs font-semibold text-cyan-300">Chapter 2</p>
+                <span class="text-[11px] text-slate-400">Architecture</span>
+              </div>
+              <h3 class="text-sm font-semibold text-white">
+                Architecting Autonomous Agents
+              </h3>
+              <p class="mt-2 text-xs text-slate-300">
+                Design the “brain” of your agents — reasoning, memory, and tools that work together.
+              </p>
+              <ul class="mt-3 space-y-1.5 text-[11px] text-slate-300">
+                <li>• Short-term &amp; long-term memory</li>
+                <li>• Tool schemas &amp; function calling</li>
+                <li>• Planners, critics, and executors</li>
+              </ul>
+            </div>
+
+            <!-- Chapter 3 -->
+            <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+              <div class="flex items-center justify-between mb-2">
+                <p class="text-xs font-semibold text-cyan-300">Chapter 3</p>
+                <span class="text-[11px] text-slate-400">Tools &amp; RAG</span>
+              </div>
+              <h3 class="text-sm font-semibold text-white">
+                Tools, APIs &amp; RAG Integration
+              </h3>
+              <p class="mt-2 text-xs text-slate-300">
+                Connect agents to the outside world and your own knowledge.
+              </p>
+              <ul class="mt-3 space-y-1.5 text-[11px] text-slate-300">
+                <li>• Web, code, files, and external APIs</li>
+                <li>• Retrieval-Augmented Generation (RAG)</li>
+                <li>• Vector stores, chunking, and retrieval</li>
+              </ul>
+            </div>
+
+            <!-- Chapter 4 -->
+            <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+              <div class="flex items-center justify-between mb-2">
+                <p class="text-xs font-semibold text-cyan-300">Chapter 4</p>
+                <span class="text-[11px] text-slate-400">Agent Skills</span>
+              </div>
+              <h3 class="text-sm font-semibold text-white">
+                Agent Skillsets: Research, Coding &amp; Ops
+              </h3>
+              <p class="mt-2 text-xs text-slate-300">
+                Give your agents superpowers and connect them to real workflows.
+              </p>
+              <ul class="mt-3 space-y-1.5 text-[11px] text-slate-300">
+                <li>• Research agents for deep dives</li>
+                <li>• Coding agents that write &amp; debug</li>
+                <li>• Content &amp; operations automation</li>
+              </ul>
+            </div>
+
+            <!-- Chapter 5 -->
+            <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+              <div class="flex items-center justify-between mb-2">
+                <p class="text-xs font-semibold text-cyan-300">Chapter 5</p>
+                <span class="text-[11px] text-slate-400">Multi-Agent</span>
+              </div>
+              <h3 class="text-sm font-semibold text-white">
+                Multi-Agent Systems &amp; Collaboration
+              </h3>
+              <p class="mt-2 text-xs text-slate-300">
+                Learn to orchestrate teams of agents that plan, execute, and critique each other.
+              </p>
+              <ul class="mt-3 space-y-1.5 text-[11px] text-slate-300">
+                <li>• Coordinator, swarm &amp; hierarchical setups</li>
+                <li>• Communication &amp; handoff patterns</li>
+                <li>• Parallelism &amp; resource management</li>
+              </ul>
+            </div>
+
+            <!-- Chapter 6 -->
+            <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+              <div class="flex items-center justify-between mb-2">
+                <p class="text-xs font-semibold text-cyan-300">Chapter 6</p>
+                <span class="text-[11px] text-slate-400">Safety</span>
+              </div>
+              <h3 class="text-sm font-semibold text-white">
+                Safety, Reliability &amp; Evaluation
+              </h3>
+              <p class="mt-2 text-xs text-slate-300">
+                Make your agents robust, controllable, and trustworthy.
+              </p>
+              <ul class="mt-3 space-y-1.5 text-[11px] text-slate-300">
+                <li>• Guardrails &amp; permissioning</li>
+                <li>• Simulation &amp; red-team testing</li>
+                <li>• Logging, metrics, and debugging</li>
+              </ul>
+            </div>
+
+            <!-- Chapter 7 -->
+            <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+              <div class="flex items-center justify-between mb-2">
+                <p class="text-xs font-semibold text-cyan-300">Chapter 7</p>
+                <span class="text-[11px] text-slate-400">Capstones</span>
+              </div>
+              <h3 class="text-sm font-semibold text-white">
+                Capstone Projects: Ship Real Agents
+              </h3>
+              <p class="mt-2 text-xs text-slate-300">
+                You’ll pick one (or more) real-world builds to complete.
+              </p>
+              <ul class="mt-3 space-y-1.5 text-[11px] text-slate-300">
+                <li>• AI Researcher Agent</li>
+                <li>• AI Workflow Automation Agent</li>
+                <li>• Multi-Agent System or Coding Agent</li>
+              </ul>
+            </div>
+
+            <!-- Chapter 8 -->
+            <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+              <div class="flex items-center justify-between mb-2">
+                <p class="text-xs font-semibold text-cyan-300">Chapter 8</p>
+                <span class="text-[11px] text-slate-400">Deployment</span>
+              </div>
+              <h3 class="text-sm font-semibold text-white">
+                Deployment, Scaling &amp; Real-World Use
+              </h3>
+              <p class="mt-2 text-xs text-slate-300">
+                Take your agents from your laptop to live users.
+              </p>
+              <ul class="mt-3 space-y-1.5 text-[11px] text-slate-300">
+                <li>• APIs, triggers &amp; scheduling</li>
+                <li>• Latency, cost &amp; reliability</li>
+                <li>• Ethics, privacy &amp; compliance</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BONUSES -->
+      <section id="bonuses" class="py-12 sm:py-16 border-t border-slate-900/70 bg-slate-950/70">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
+            <div>
+              <h2 class="text-xl sm:text-2xl font-semibold text-white">
+                Waitlist-Only <span class="text-cyan-400">Bonuses</span>
+              </h2>
+              <p class="mt-1 text-sm text-slate-300 max-w-xl">
+                Joining the waitlist locks in perks that won’t be available later.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid gap-4 md:grid-cols-4 text-xs sm:text-sm">
+            <div class="rounded-2xl border border-emerald-500/50 bg-emerald-500/10 p-4">
+              <p class="font-medium text-emerald-100 mb-1">
+                Early-Bird Pricing
+              </p>
+              <p class="text-emerald-50/90">
+                Get a significant discount on the launch price, reserved only for waitlist members.
+              </p>
+            </div>
+            <div class="rounded-2xl border border-cyan-500/50 bg-cyan-500/10 p-4">
+              <p class="font-medium text-cyan-100 mb-1">
+                Agent Templates
+              </p>
+              <p class="text-cyan-50/90">
+                Copy-paste blueprints for research, coding, RAG, and workflow agents.
+              </p>
+            </div>
+            <div class="rounded-2xl border border-indigo-500/50 bg-indigo-500/10 p-4">
+              <p class="font-medium text-indigo-100 mb-1">
+                Private Community
+              </p>
+              <p class="text-indigo-50/90">
+                Access to a focused group of builders who are serious about AI.
+              </p>
+            </div>
+            <div class="rounded-2xl border border-fuchsia-500/50 bg-fuchsia-500/10 p-4">
+              <p class="font-medium text-fuchsia-100 mb-1">
+                Bonus Live Session
+              </p>
+              <p class="text-fuchsia-50/90">
+                A live deep dive on building your first production-ready agent.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="py-12 sm:py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-xl sm:text-2xl font-semibold text-white mb-6">
+            Frequently Asked Questions
+          </h2>
+          <div class="space-y-4 text-sm">
+            <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-4">
+              <p class="font-medium text-slate-100">
+                Do I need to be a programmer?
+              </p>
+              <p class="mt-2 text-slate-300 text-xs sm:text-sm">
+                Basic technical comfort helps, but you don’t need to be a senior engineer. We’ll focus on concepts, templates, and practical builds. Some modules will include code, but you can follow along with examples.
+              </p>
+            </div>
+            <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-4">
+              <p class="font-medium text-slate-100">
+                How long is the course?
+              </p>
+              <p class="mt-2 text-slate-300 text-xs sm:text-sm">
+                Expect several weeks of guided learning plus lifetime access to recordings, templates, and materials so you can go at your own pace.
+              </p>
+            </div>
+            <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-4">
+              <p class="font-medium text-slate-100">
+                When does it launch?
+              </p>
+              <p class="mt-2 text-slate-300 text-xs sm:text-sm">
+                The exact date will be announced first to the waitlist. You’ll get priority access and early-bird pricing before public enrollment opens.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FINAL CTA / PREVIEW STRIP -->
+      <section class="py-10 border-t border-slate-900/70 bg-slate-950">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p class="text-xs font-medium uppercase tracking-[0.25em] text-slate-400 mb-2">
+            Preview Mode
+          </p>
+          <h2 class="text-xl sm:text-2xl font-semibold text-white">
+            Ready to become an <span class="text-cyan-400">AI Hero</span>?
+          </h2>
+          <p class="mt-2 text-sm text-slate-300 max-w-xl mx-auto">
+            Join the waitlist now and get the full launch details plus bonuses the moment the course opens.
+          </p>
+
+          <form class="mt-5 max-w-md mx-auto space-y-3">
+            <div class="flex flex-col sm:flex-row gap-3">
+              <input
+                type="email"
+                required
+                placeholder="Your email to join the waitlist"
+                class="flex-1 rounded-xl border border-slate-700 bg-slate-900/70 px-3 py-2 text-sm text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-cyan-500"
+              />
+              <button
+                type="submit"
+                class="rounded-xl bg-gradient-to-r from-cyan-500 to-blue-500 px-5 py-2 text-sm font-medium text-slate-950 hover:from-cyan-400 hover:to-blue-400 transition shadow-lg shadow-cyan-500/30"
+              >
+                Join Now
+              </button>
+            </div>
+            <p class="text-[11px] text-slate-400">
+              Instant confirmation + early access when the doors open.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-900 bg-slate-950/90">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-2">
+        <p class="text-[11px] text-slate-500">
+          © <span id="year"></span> AI Hero. All rights reserved.
+        </p>
+        <p class="text-[11px] text-slate-500">
+          Built for humans who want real AI superpowers.
+        </p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Tiny script to keep year up to date -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+ 
+
+</body>
+</html>
