@@ -5,8 +5,9 @@ export default function Home() {
 
 
   return (
-    <div>
-      <h1>hellow rold</h1>
+    <div className="p-10 flex justify-center">
+      
+      <h1  className="text-2xl">You're ready</h1>
     </div>
   );
 }

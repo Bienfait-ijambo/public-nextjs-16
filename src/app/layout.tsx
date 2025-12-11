@@ -9,7 +9,6 @@ import { ThemeProvider } from 'next-themes'
 import { SessionProvider } from "next-auth/react"
 import type { Session } from "next-auth";
 import { Provider } from "react-redux";
-import { store } from "@/stores";
 import NextTopLoader from "nextjs-toploader";
 
   import { ToastContainer, toast } from 'react-toastify';
@@ -51,12 +50,12 @@ export default function RootLayout({
           enableSystem
         > 
           <SessionProvider session={session} >
-            <Provider store={store}>
+            {/* <Provider store={store}> */}
              <NextTopLoader   height={3}  />
 
             {children}
              <ToastContainer />
-            </Provider>
+            {/* </Provider> */}
           </SessionProvider>
         </ThemeProvider>
 
